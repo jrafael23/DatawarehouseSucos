@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDimensoes"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{6FAA231D-56E0-4313-8DED-8B2E590E4CB9}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{FB0109F8-D40A-418F-8D16-9AC34D4A4923}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -126,6 +126,53 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0B084E63-C80D-4D2B-B8E1-D94F421DCED8}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\RAFAEL\OneDrive\Área de Trabalho\ALURA\BI e DW\Arquivos - Aula 2\REGIOES DOS ESTADOS.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTADO ABREVIAÇÃO"
+              DTS:DTSID="{EF11F598-CF68-4527-B999-A3B505E641C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTADO"
+              DTS:DTSID="{49A8038E-4BF6-41DF-A26D-089E677C8A7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REGIAO"
+              DTS:DTSID="{D37D5E40-7860-4553-9EDC-73B66D00EE6F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -133,7 +180,6 @@
       DTS:refId="Package\Criação da dimensão Cliente"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
       DTS:DTSID="{4D1661D4-D02B-4E9F-8762-94BB8B893689}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -166,8 +212,8 @@
               <connections>
                 <connection
                   refId="Package\Criação da dimensão Cliente\Arquivo CSV estado com região.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -837,7 +883,7 @@
                     <inputColumn
                       refId="Package\Criação da dimensão Cliente\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[Desc_REGIAO]"
                       cachedDataType="wstr"
-                      cachedLength="200"
+                      cachedLength="50"
                       cachedName="Desc_REGIAO"
                       externalMetadataColumnId="Package\Criação da dimensão Cliente\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_6]"
                       lineageId="Package\Criação da dimensão Cliente\Conversão para Unicode.Outputs[Saída de Conversão de Dados].Columns[Desc_REGIAO]" />
@@ -1086,7 +1132,7 @@
                     <inputColumn
                       refId="Package\Criação da dimensão Cliente\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[Desc_REGIAO]"
                       cachedDataType="wstr"
-                      cachedLength="200"
+                      cachedLength="50"
                       cachedName="Desc_REGIAO"
                       externalMetadataColumnId="Package\Criação da dimensão Cliente\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_6]"
                       lineageId="Package\Criação da dimensão Cliente\Conversão para Unicode.Outputs[Saída de Conversão de Dados].Columns[Desc_REGIAO]" />
@@ -1524,7 +1570,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      length="200"
+                      length="50"
                       lineageId="Package\Criação da dimensão Cliente\Conversão para Unicode.Outputs[Saída de Conversão de Dados].Columns[Desc_REGIAO]"
                       name="Desc_REGIAO"
                       truncationRowDisposition="FailComponent">
@@ -1816,7 +1862,7 @@
                     <inputColumn
                       refId="Package\Criação da dimensão Cliente\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].Columns[Desc_REGIAO]"
                       cachedDataType="wstr"
-                      cachedLength="200"
+                      cachedLength="50"
                       cachedName="Desc_REGIAO"
                       externalMetadataColumnId="Package\Criação da dimensão Cliente\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Desc_Regiao]"
                       lineageId="Package\Criação da dimensão Cliente\Conversão para Unicode.Outputs[Saída de Conversão de Dados].Columns[Desc_REGIAO]">
@@ -2247,7 +2293,7 @@
                     <inputColumn
                       refId="Package\Criação da dimensão Cliente\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[Desc_REGIAO]"
                       cachedDataType="wstr"
-                      cachedLength="200"
+                      cachedLength="50"
                       cachedName="Desc_REGIAO"
                       externalMetadataColumnId="Package\Criação da dimensão Cliente\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Desc_Regiao]"
                       lineageId="Package\Criação da dimensão Cliente\Conversão para Unicode.Outputs[Saída de Conversão de Dados].Columns[Desc_REGIAO]" />
@@ -3742,14 +3788,14 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,65.9999999999999"
+              EndConnector="0,66"
               Start="0,0"
-              End="0,58.4999999999999">
+              End="0,58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.4999999999999" />
+                    End="0,58.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4207,7 +4253,9 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4229,7 +4277,9 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
