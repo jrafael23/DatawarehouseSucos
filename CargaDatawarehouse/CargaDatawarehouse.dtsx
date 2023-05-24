@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{D9869C2B-670F-4C2E-BE72-53A1B47DBC32}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{2485C9FA-4409-41B3-AD66-D356DC066828}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -59,7 +59,6 @@
       DTS:refId="Package\Carga Dimensões"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Carga Dimensões"
-      DTS:Disabled="True"
       DTS:DTSID="{AA744A83-DDCB-422D-B9E5-21915ED71B06}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -93,7 +92,6 @@
       DTS:refId="Package\Carga Fatos"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Carga Fatos"
-      DTS:Disabled="True"
       DTS:DTSID="{FACD3A7B-EB45-4B84-87C4-80F7216D03F5}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
