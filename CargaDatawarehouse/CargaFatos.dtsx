@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaFatos"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{5F9359CB-68A2-4BA9-A9BB-2C4C340EEF12}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{439C65B9-C2E2-41B2-8334-AB3E0147CF75}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,6 +38,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DESKTOP-QAN39UG;Initial Catalog=FONTES_DB;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-QAN39UG.DW_SUCOS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B4DE4F2B-EA42-4545-885B-8979D80A4E2B}"
+      DTS:ObjectName="DESKTOP-QAN39UG.DW_SUCOS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-QAN39UG;Initial Catalog=DW_SUCOS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-CargaFatos-{B4DE4F2B-EA42-4545-885B-8979D80A4E2B}DESKTOP-QAN39UG.DW_SUCOS;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -85,7 +97,6 @@
       DTS:refId="Package\Carga Fato001"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
       DTS:DTSID="{D79B6512-8B76-4587-A61B-96A140B3B153}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -146,7 +157,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                 <property
                   dataType="System.String"
                   description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
-                  name="ParameterMapping">"Parameter0:Input",{DA01A22C-915E-4CCB-B66B-415AA84C2EDB};"Parameter1:Input",{E37E4374-35EF-41E3-B53C-182AC6DD1A5F};"Parameter2:Input",{680CA7A1-CB26-4202-8B8B-427F5B099819};"Parameter3:Input",{43DF71B3-C235-4F07-83B7-98A99D3235C2};</property>
+                  name="ParameterMapping">"Parameter0:Input",{0BB1D467-07A9-4E44-A5EE-982C14368F54};"Parameter1:Input",{DBCA29AD-C49B-4573-ABAA-3D247A78A785};"Parameter2:Input",{4864E261-C273-45C7-A20F-2D181E660CD4};"Parameter3:Input",{AB8B61B7-773A-4C05-A3E7-61EEEA912631};</property>
               </properties>
               <connections>
                 <connection
@@ -1457,8 +1468,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato002"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
-      DTS:DTSID="{02D8FFE0-30FA-4865-8260-59E40E969A17}"
+      DTS:DTSID="{e22aa4ab-6cce-4e6f-bab4-d0e5ced9f81d}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato002"
@@ -1518,7 +1528,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                 <property
                   dataType="System.String"
                   description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
-                  name="ParameterMapping">"Parameter0:Input",{DA01A22C-915E-4CCB-B66B-415AA84C2EDB};"Parameter1:Input",{E37E4374-35EF-41E3-B53C-182AC6DD1A5F};"Parameter2:Input",{680CA7A1-CB26-4202-8B8B-427F5B099819};"Parameter3:Input",{43DF71B3-C235-4F07-83B7-98A99D3235C2};</property>
+                  name="ParameterMapping">"Parameter0:Input",{0BB1D467-07A9-4E44-A5EE-982C14368F54};"Parameter1:Input",{DBCA29AD-C49B-4573-ABAA-3D247A78A785};"Parameter2:Input",{4864E261-C273-45C7-A20F-2D181E660CD4};"Parameter3:Input",{AB8B61B7-773A-4C05-A3E7-61EEEA912631};</property>
               </properties>
               <connections>
                 <connection
@@ -2423,8 +2433,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato003"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
-      DTS:DTSID="{4C7C2AD0-E9A8-4DE6-936B-935287B6A5F2}"
+      DTS:DTSID="{af988a6a-e376-43ea-a6bf-9301b2d0ce96}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato003"
@@ -2484,7 +2493,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                 <property
                   dataType="System.String"
                   description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
-                  name="ParameterMapping">"Parameter0:Input",{DA01A22C-915E-4CCB-B66B-415AA84C2EDB};"Parameter1:Input",{E37E4374-35EF-41E3-B53C-182AC6DD1A5F};"Parameter2:Input",{680CA7A1-CB26-4202-8B8B-427F5B099819};"Parameter3:Input",{43DF71B3-C235-4F07-83B7-98A99D3235C2};</property>
+                  name="ParameterMapping">"Parameter0:Input",{0BB1D467-07A9-4E44-A5EE-982C14368F54};"Parameter1:Input",{DBCA29AD-C49B-4573-ABAA-3D247A78A785};"Parameter2:Input",{4864E261-C273-45C7-A20F-2D181E660CD4};"Parameter3:Input",{AB8B61B7-773A-4C05-A3E7-61EEEA912631};</property>
               </properties>
               <connections>
                 <connection
@@ -2605,11 +2614,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato003\Comando OLE DB 2"
+              refId="Package\Carga Fato003\Comando OLE DB"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
               description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
-              name="Comando OLE DB 2"
+              name="Comando OLE DB"
               usesDispositions="true"
               version="2">
               <properties>
@@ -2630,7 +2639,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato003\Comando OLE DB 2.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato003\Comando OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -2638,37 +2647,37 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]"
+                  refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
                   errorOrTruncationOperation="Execução de Comando"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Comando OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_FABRICA"
-                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[COD_FABRICA]" />
                     <inputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[CUSTO_FIXO]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[CUSTO_FIXO]"
                       cachedDataType="r8"
                       cachedName="CUSTO_FIXO"
-                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[CUSTO_FIXO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       dataType="r8"
                       name="Param_0">
                       <properties>
@@ -2679,7 +2688,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       dataType="wstr"
                       length="50"
                       name="Param_1">
@@ -2691,7 +2700,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       dataType="wstr"
                       length="50"
                       name="Param_2">
@@ -2707,29 +2716,29 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato003\Comando OLE DB 2.Outputs[Saída de Comando OLE DB]"
+                  refId="Package\Carga Fato003\Comando OLE DB.Outputs[Saída de Comando OLE DB]"
                   exclusionGroup="1"
                   name="Saída de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Fato003\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB]"
+                  refId="Package\Carga Fato003\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato003\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato003\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato003\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato003\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato003\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2738,11 +2747,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato003\Comando OLE DB 3"
+              refId="Package\Carga Fato003\Comando OLE DB 1"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
               description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
-              name="Comando OLE DB 3"
+              name="Comando OLE DB 1"
               usesDispositions="true"
               version="2">
               <properties>
@@ -2763,7 +2772,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato003\Comando OLE DB 3.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato003\Comando OLE DB 1.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -2771,37 +2780,37 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]"
+                  refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
                   errorOrTruncationOperation="Execução de Comando"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Comando OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_FABRICA"
-                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[COD_FABRICA]" />
                     <inputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[CUSTO_FIXO]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[CUSTO_FIXO]"
                       cachedDataType="r8"
                       cachedName="CUSTO_FIXO"
-                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      externalMetadataColumnId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[CUSTO_FIXO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       dataType="r8"
                       name="Param_0">
                       <properties>
@@ -2812,7 +2821,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       dataType="wstr"
                       length="50"
                       name="Param_1">
@@ -2824,7 +2833,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       dataType="wstr"
                       length="50"
                       name="Param_2">
@@ -2840,29 +2849,29 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato003\Comando OLE DB 3.Outputs[Saída de Comando OLE DB]"
+                  refId="Package\Carga Fato003\Comando OLE DB 1.Outputs[Saída de Comando OLE DB]"
                   exclusionGroup="1"
                   name="Saída de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Fato003\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB]"
+                  refId="Package\Carga Fato003\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato003\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato003\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato003\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato003\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato003\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato003\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3043,11 +3052,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato003\Insert Destination 1"
+              refId="Package\Carga Fato003\Insert Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
               description="Destino OLE DB"
-              name="Insert Destination 1"
+              name="Insert Destination"
               usesDispositions="true"
               version="4">
               <properties>
@@ -3100,7 +3109,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato003\Insert Destination 1.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato003\Insert Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -3108,47 +3117,47 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB]"
+                  refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB]"
                   errorOrTruncationOperation="Inserir"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Destino OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_FABRICA]"
+                      refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_FABRICA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_FABRICA"
-                      externalMetadataColumnId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
+                      externalMetadataColumnId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[COD_FABRICA]" />
                     <inputColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
+                      externalMetadataColumnId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[CUSTO_FIXO]"
+                      refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[CUSTO_FIXO]"
                       cachedDataType="r8"
                       cachedName="CUSTO_FIXO"
-                      externalMetadataColumnId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Custo_Fixo]"
+                      externalMetadataColumnId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Custo_Fixo]"
                       lineageId="Package\Carga Fato003\Carga Fato 003.Outputs[Saída de Origem OLE DB].Columns[CUSTO_FIXO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
+                      refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Fabrica" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
+                      refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Dia" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Custo_Fixo]"
+                      refId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Custo_Fixo]"
                       dataType="r8"
                       name="Custo_Fixo" />
                   </externalMetadataColumns>
@@ -3156,22 +3165,22 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato003\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB]"
+                  refId="Package\Carga Fato003\Insert Destination.Outputs[Saída de Erro de Destino OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Destino OLE DB"
-                  synchronousInputId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB]">
+                  synchronousInputId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato003\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato003\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato003\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato003\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato003\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato003\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato003\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3183,17 +3192,17 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
           <paths>
             <path
               refId="Package\Carga Fato003.Paths[Nova Saída]"
-              endId="Package\Carga Fato003\Insert Destination 1.Inputs[Entrada de Destino OLE DB]"
+              endId="Package\Carga Fato003\Insert Destination.Inputs[Entrada de Destino OLE DB]"
               name="Nova Saída"
               startId="Package\Carga Fato003\Dimensão de Alteração Lenta.Outputs[Nova Saída]" />
             <path
               refId="Package\Carga Fato003.Paths[Saída de Atualizações de Atributo de Alteração]"
-              endId="Package\Carga Fato003\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]"
+              endId="Package\Carga Fato003\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
               name="Saída de Atualizações de Atributo de Alteração"
               startId="Package\Carga Fato003\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]" />
             <path
               refId="Package\Carga Fato003.Paths[Saída de Atualizações de Membro Inferido]"
-              endId="Package\Carga Fato003\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]"
+              endId="Package\Carga Fato003\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
               name="Saída de Atualizações de Membro Inferido"
               startId="Package\Carga Fato003\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]" />
             <path
@@ -3209,8 +3218,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato004"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
-      DTS:DTSID="{ABB0B8C7-87B3-4A12-BDCA-864D1DFC58A8}"
+      DTS:DTSID="{ffc1fe80-beb2-4861-80c2-323d42a717f5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato004"
@@ -3270,7 +3278,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                 <property
                   dataType="System.String"
                   description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
-                  name="ParameterMapping">"Parameter0:Input",{DA01A22C-915E-4CCB-B66B-415AA84C2EDB};"Parameter1:Input",{E37E4374-35EF-41E3-B53C-182AC6DD1A5F};"Parameter2:Input",{680CA7A1-CB26-4202-8B8B-427F5B099819};"Parameter3:Input",{43DF71B3-C235-4F07-83B7-98A99D3235C2};</property>
+                  name="ParameterMapping">"Parameter0:Input",{0BB1D467-07A9-4E44-A5EE-982C14368F54};"Parameter1:Input",{DBCA29AD-C49B-4573-ABAA-3D247A78A785};"Parameter2:Input",{4864E261-C273-45C7-A20F-2D181E660CD4};"Parameter3:Input",{AB8B61B7-773A-4C05-A3E7-61EEEA912631};</property>
               </properties>
               <connections>
                 <connection
@@ -3433,11 +3441,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato004\Comando OLE DB 2"
+              refId="Package\Carga Fato004\Comando OLE DB"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
               description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
-              name="Comando OLE DB 2"
+              name="Comando OLE DB"
               usesDispositions="true"
               version="2">
               <properties>
@@ -3458,7 +3466,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato004\Comando OLE DB 2.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato004\Comando OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -3466,51 +3474,51 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]"
+                  refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
                   errorOrTruncationOperation="Execução de Comando"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Comando OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_CLIENTE]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_CLIENTE]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_CLIENTE"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_CLIENTE]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_ORGANIZACIONAL]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_ORGANIZACIONAL]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_ORGANIZACIONAL"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_ORGANIZACIONAL]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_PRODUTO"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_PRODUTO]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[META_FATURAMENTO]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[META_FATURAMENTO]"
                       cachedDataType="r8"
                       cachedName="META_FATURAMENTO"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[META_FATURAMENTO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       dataType="r8"
                       name="Param_0">
                       <properties>
@@ -3521,7 +3529,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       dataType="wstr"
                       length="50"
                       name="Param_1">
@@ -3533,7 +3541,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       dataType="wstr"
                       length="50"
                       name="Param_2">
@@ -3545,7 +3553,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       dataType="wstr"
                       length="50"
                       name="Param_3">
@@ -3557,7 +3565,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
                       dataType="wstr"
                       length="50"
                       name="Param_4">
@@ -3573,29 +3581,29 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato004\Comando OLE DB 2.Outputs[Saída de Comando OLE DB]"
+                  refId="Package\Carga Fato004\Comando OLE DB.Outputs[Saída de Comando OLE DB]"
                   exclusionGroup="1"
                   name="Saída de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Fato004\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB]"
+                  refId="Package\Carga Fato004\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato004\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato004\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato004\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato004\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato004\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3604,11 +3612,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato004\Comando OLE DB 3"
+              refId="Package\Carga Fato004\Comando OLE DB 1"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
               description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
-              name="Comando OLE DB 3"
+              name="Comando OLE DB 1"
               usesDispositions="true"
               version="2">
               <properties>
@@ -3629,7 +3637,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato004\Comando OLE DB 3.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato004\Comando OLE DB 1.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -3637,51 +3645,51 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]"
+                  refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
                   errorOrTruncationOperation="Execução de Comando"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Comando OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_CLIENTE]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_CLIENTE]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_CLIENTE"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_CLIENTE]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_ORGANIZACIONAL]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_ORGANIZACIONAL]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_ORGANIZACIONAL"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_ORGANIZACIONAL]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_PRODUTO"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_PRODUTO]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[META_FATURAMENTO]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[META_FATURAMENTO]"
                       cachedDataType="r8"
                       cachedName="META_FATURAMENTO"
-                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      externalMetadataColumnId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[META_FATURAMENTO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       dataType="r8"
                       name="Param_0">
                       <properties>
@@ -3692,7 +3700,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       dataType="wstr"
                       length="50"
                       name="Param_1">
@@ -3704,7 +3712,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       dataType="wstr"
                       length="50"
                       name="Param_2">
@@ -3716,7 +3724,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       dataType="wstr"
                       length="50"
                       name="Param_3">
@@ -3728,7 +3736,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_4]"
                       dataType="wstr"
                       length="50"
                       name="Param_4">
@@ -3744,29 +3752,29 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato004\Comando OLE DB 3.Outputs[Saída de Comando OLE DB]"
+                  refId="Package\Carga Fato004\Comando OLE DB 1.Outputs[Saída de Comando OLE DB]"
                   exclusionGroup="1"
                   name="Saída de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Fato004\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB]"
+                  refId="Package\Carga Fato004\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato004\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato004\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato004\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato004\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato004\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato004\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3985,11 +3993,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato004\Insert Destination 1"
+              refId="Package\Carga Fato004\Insert Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
               description="Destino OLE DB"
-              name="Insert Destination 1"
+              name="Insert Destination"
               usesDispositions="true"
               version="4">
               <properties>
@@ -4042,7 +4050,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato004\Insert Destination 1.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato004\Insert Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -4050,71 +4058,71 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB]"
+                  refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB]"
                   errorOrTruncationOperation="Inserir"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Destino OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_CLIENTE]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_CLIENTE]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_CLIENTE"
-                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Cliente]"
+                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Cliente]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_CLIENTE]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_PRODUTO]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_PRODUTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_PRODUTO"
-                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
+                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_PRODUTO]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_ORGANIZACIONAL]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_ORGANIZACIONAL]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_ORGANIZACIONAL"
-                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Organizacional]"
+                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Organizacional]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_ORGANIZACIONAL]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
+                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[META_FATURAMENTO]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[META_FATURAMENTO]"
                       cachedDataType="r8"
                       cachedName="META_FATURAMENTO"
-                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Faturamento]"
+                      externalMetadataColumnId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Faturamento]"
                       lineageId="Package\Carga Fato004\Carga Fato 004.Outputs[Saída de Origem OLE DB].Columns[META_FATURAMENTO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Cliente]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Cliente]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Cliente" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Produto" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Organizacional]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Organizacional]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Organizacional" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Dia" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Faturamento]"
+                      refId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Faturamento]"
                       dataType="r8"
                       name="Meta_Faturamento" />
                   </externalMetadataColumns>
@@ -4122,22 +4130,22 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato004\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB]"
+                  refId="Package\Carga Fato004\Insert Destination.Outputs[Saída de Erro de Destino OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Destino OLE DB"
-                  synchronousInputId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB]">
+                  synchronousInputId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato004\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato004\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato004\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato004\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato004\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato004\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato004\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4149,17 +4157,17 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
           <paths>
             <path
               refId="Package\Carga Fato004.Paths[Nova Saída]"
-              endId="Package\Carga Fato004\Insert Destination 1.Inputs[Entrada de Destino OLE DB]"
+              endId="Package\Carga Fato004\Insert Destination.Inputs[Entrada de Destino OLE DB]"
               name="Nova Saída"
               startId="Package\Carga Fato004\Dimensão de Alteração Lenta.Outputs[Nova Saída]" />
             <path
               refId="Package\Carga Fato004.Paths[Saída de Atualizações de Atributo de Alteração]"
-              endId="Package\Carga Fato004\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]"
+              endId="Package\Carga Fato004\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
               name="Saída de Atualizações de Atributo de Alteração"
               startId="Package\Carga Fato004\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]" />
             <path
               refId="Package\Carga Fato004.Paths[Saída de Atualizações de Membro Inferido]"
-              endId="Package\Carga Fato004\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]"
+              endId="Package\Carga Fato004\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
               name="Saída de Atualizações de Membro Inferido"
               startId="Package\Carga Fato004\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]" />
             <path
@@ -4175,8 +4183,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato005"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
-      DTS:DTSID="{975C783E-6F6E-4F37-AADD-21FCFFDBB022}"
+      DTS:DTSID="{bf42e7fc-4942-4ca9-8e1c-d944b083f90a}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato005"
@@ -4236,7 +4243,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                 <property
                   dataType="System.String"
                   description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
-                  name="ParameterMapping">"Parameter0:Input",{DA01A22C-915E-4CCB-B66B-415AA84C2EDB};"Parameter1:Input",{E37E4374-35EF-41E3-B53C-182AC6DD1A5F};"Parameter2:Input",{680CA7A1-CB26-4202-8B8B-427F5B099819};"Parameter3:Input",{43DF71B3-C235-4F07-83B7-98A99D3235C2};</property>
+                  name="ParameterMapping">"Parameter0:Input",{0BB1D467-07A9-4E44-A5EE-982C14368F54};"Parameter1:Input",{DBCA29AD-C49B-4573-ABAA-3D247A78A785};"Parameter2:Input",{4864E261-C273-45C7-A20F-2D181E660CD4};"Parameter3:Input",{AB8B61B7-773A-4C05-A3E7-61EEEA912631};</property>
               </properties>
               <connections>
                 <connection
@@ -4378,11 +4385,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato005\Comando OLE DB 2"
+              refId="Package\Carga Fato005\Comando OLE DB"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
               description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
-              name="Comando OLE DB 2"
+              name="Comando OLE DB"
               usesDispositions="true"
               version="2">
               <properties>
@@ -4403,7 +4410,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato005\Comando OLE DB 2.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato005\Comando OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -4411,44 +4418,44 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]"
+                  refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
                   errorOrTruncationOperation="Execução de Comando"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Comando OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_FABRICA"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_FABRICA]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_PRODUTO"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_PRODUTO]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].Columns[META_CUSTO]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[META_CUSTO]"
                       cachedDataType="r8"
                       cachedName="META_CUSTO"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[META_CUSTO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       dataType="r8"
                       name="Param_0">
                       <properties>
@@ -4459,7 +4466,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       dataType="wstr"
                       length="50"
                       name="Param_1">
@@ -4471,7 +4478,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       dataType="wstr"
                       length="50"
                       name="Param_2">
@@ -4483,7 +4490,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       dataType="wstr"
                       length="50"
                       name="Param_3">
@@ -4499,29 +4506,29 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato005\Comando OLE DB 2.Outputs[Saída de Comando OLE DB]"
+                  refId="Package\Carga Fato005\Comando OLE DB.Outputs[Saída de Comando OLE DB]"
                   exclusionGroup="1"
                   name="Saída de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Fato005\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB]"
+                  refId="Package\Carga Fato005\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato005\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato005\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato005\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato005\Comando OLE DB 2.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato005\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4530,11 +4537,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato005\Comando OLE DB 3"
+              refId="Package\Carga Fato005\Comando OLE DB 1"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
               description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
-              name="Comando OLE DB 3"
+              name="Comando OLE DB 1"
               usesDispositions="true"
               version="2">
               <properties>
@@ -4555,7 +4562,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato005\Comando OLE DB 3.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato005\Comando OLE DB 1.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -4563,44 +4570,44 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]"
+                  refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
                   errorOrTruncationOperation="Execução de Comando"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Comando OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_FABRICA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_FABRICA"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_FABRICA]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[COD_PRODUTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_PRODUTO"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_PRODUTO]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].Columns[META_CUSTO]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[META_CUSTO]"
                       cachedDataType="r8"
                       cachedName="META_CUSTO"
-                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      externalMetadataColumnId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[META_CUSTO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
                       dataType="r8"
                       name="Param_0">
                       <properties>
@@ -4611,7 +4618,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
                       dataType="wstr"
                       length="50"
                       name="Param_1">
@@ -4623,7 +4630,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
                       dataType="wstr"
                       length="50"
                       name="Param_2">
@@ -4635,7 +4642,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_3]"
                       dataType="wstr"
                       length="50"
                       name="Param_3">
@@ -4651,29 +4658,29 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato005\Comando OLE DB 3.Outputs[Saída de Comando OLE DB]"
+                  refId="Package\Carga Fato005\Comando OLE DB 1.Outputs[Saída de Comando OLE DB]"
                   exclusionGroup="1"
                   name="Saída de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Fato005\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB]"
+                  refId="Package\Carga Fato005\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Comando OLE DB"
-                  synchronousInputId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]">
+                  synchronousInputId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato005\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato005\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato005\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato005\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato005\Comando OLE DB 3.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato005\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4873,11 +4880,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Fato005\Insert Destination 1"
+              refId="Package\Carga Fato005\Insert Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
               description="Destino OLE DB"
-              name="Insert Destination 1"
+              name="Insert Destination"
               usesDispositions="true"
               version="4">
               <properties>
@@ -4930,7 +4937,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Fato005\Insert Destination 1.Connections[OleDbConnection]"
+                  refId="Package\Carga Fato005\Insert Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Conexão com DW]"
                   connectionManagerRefId="Package.ConnectionManagers[Conexão com DW]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -4938,59 +4945,59 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB]"
+                  refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB]"
                   errorOrTruncationOperation="Inserir"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Destino OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_PRODUTO]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_PRODUTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_PRODUTO"
-                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
+                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_PRODUTO]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_FABRICA]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_FABRICA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_FABRICA"
-                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
+                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_FABRICA]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[COD_DIA]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[COD_DIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="COD_DIA"
-                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
+                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[COD_DIA]" />
                     <inputColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].Columns[META_CUSTO]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[META_CUSTO]"
                       cachedDataType="r8"
                       cachedName="META_CUSTO"
-                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Custo]"
+                      externalMetadataColumnId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Custo]"
                       lineageId="Package\Carga Fato005\Carga Fato 005.Outputs[Saída de Origem OLE DB].Columns[META_CUSTO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Produto]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Produto" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Fabrica]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Fabrica" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Dia]"
                       dataType="wstr"
                       length="50"
                       name="Cod_Dia" />
                     <externalMetadataColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Custo]"
+                      refId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Meta_Custo]"
                       dataType="r8"
                       name="Meta_Custo" />
                   </externalMetadataColumns>
@@ -4998,22 +5005,22 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Fato005\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB]"
+                  refId="Package\Carga Fato005\Insert Destination.Outputs[Saída de Erro de Destino OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Destino OLE DB"
-                  synchronousInputId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB]">
+                  synchronousInputId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Fato005\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato005\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Fato005\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Fato005\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Fato005\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Fato005\Insert Destination 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Fato005\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -5025,17 +5032,17 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
           <paths>
             <path
               refId="Package\Carga Fato005.Paths[Nova Saída]"
-              endId="Package\Carga Fato005\Insert Destination 1.Inputs[Entrada de Destino OLE DB]"
+              endId="Package\Carga Fato005\Insert Destination.Inputs[Entrada de Destino OLE DB]"
               name="Nova Saída"
               startId="Package\Carga Fato005\Dimensão de Alteração Lenta.Outputs[Nova Saída]" />
             <path
               refId="Package\Carga Fato005.Paths[Saída de Atualizações de Atributo de Alteração]"
-              endId="Package\Carga Fato005\Comando OLE DB 3.Inputs[Entrada de Comando OLE DB]"
+              endId="Package\Carga Fato005\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
               name="Saída de Atualizações de Atributo de Alteração"
               startId="Package\Carga Fato005\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]" />
             <path
               refId="Package\Carga Fato005.Paths[Saída de Atualizações de Membro Inferido]"
-              endId="Package\Carga Fato005\Comando OLE DB 2.Inputs[Entrada de Comando OLE DB]"
+              endId="Package\Carga Fato005\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
               name="Saída de Atualizações de Membro Inferido"
               startId="Package\Carga Fato005\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]" />
             <path
@@ -5048,6 +5055,40 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E14E24FD-6CBF-44BF-9447-D236926EA61E}"
+      DTS:From="Package\Carga Fato001"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Carga Fato002" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{E56C2B06-F9B9-479A-9A67-8B8445710D00}"
+      DTS:From="Package\Carga Fato002"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Carga Fato003" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E0D7E012-35F9-4AC4-B6B3-A5B9BC9C7A16}"
+      DTS:From="Package\Carga Fato003"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Carga Fato004" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{76173BF0-CA9C-471E-AFD6-2225DF445C94}"
+      DTS:From="Package\Carga Fato004"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Carga Fato005" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -5059,27 +5100,163 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="147.2,41.6"
           Id="Package\Carga Fato001"
-          TopLeft="0.714285715806213,14.5294117519703" />
+          TopLeft="7.14285715806236,11.4705882252397" />
         <NodeLayout
           Size="147.2,41.6"
           Id="Package\Carga Fato002"
-          TopLeft="89.2857144757802,73.3058823777421" />
+          TopLeft="127.142857413511,76.1411764276894" />
         <NodeLayout
           Size="147.2,41.6"
           Id="Package\Carga Fato003"
-          TopLeft="182.142857530591,134.376470648562" />
+          TopLeft="213.571429026066,147.917647042066" />
         <NodeLayout
           Size="147.2,41.6"
           Id="Package\Carga Fato004"
-          TopLeft="285.00000060669,193.811764892224" />
+          TopLeft="272.857143437984,218.164705893078" />
         <NodeLayout
           Size="147.2,41.6"
           Id="Package\Carga Fato005"
-          TopLeft="387.857143682789,258.152941217359" />
+          TopLeft="365.714286492795,282.294117690628" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="80.7428571580623,53.0705882252397">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120.000000255449,23.0705882024497"
+              Start="0,0"
+              End="120.000000255449,15.5705882024497">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.53529410122484" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.53529410122484"
+                    Point2="0,11.5352941012248"
+                    Point3="4,11.5352941012248" />
+                  <mssgle:LineSegment
+                    End="116.000000255449,11.5352941012248" />
+                  <mssgle:CubicBezierSegment
+                    Point1="116.000000255449,11.5352941012248"
+                    Point2="120.000000255449,11.5352941012248"
+                    Point3="120.000000255449,15.5352941012248" />
+                  <mssgle:LineSegment
+                    End="120.000000255449,15.5705882024497" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="200.742857413511,117.741176427689">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86.4285716125552,30.1764706143768"
+              Start="0,0"
+              End="86.4285716125552,22.6764706143768">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.0882353071884" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.0882353071884"
+                    Point2="0,15.0882353071884"
+                    Point3="4,15.0882353071884" />
+                  <mssgle:LineSegment
+                    End="82.4285716125552,15.0882353071884" />
+                  <mssgle:CubicBezierSegment
+                    Point1="82.4285716125552,15.0882353071884"
+                    Point2="86.4285716125552,15.0882353071884"
+                    Point3="86.4285716125552,19.0882353071884" />
+                  <mssgle:LineSegment
+                    End="86.4285716125552,22.6764706143768" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="287.171429026066,189.517647042066">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="59.285714411918,28.6470588510114"
+              Start="0,0"
+              End="59.285714411918,21.1470588510114">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.3235294255057" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.3235294255057"
+                    Point2="0,14.3235294255057"
+                    Point3="4,14.3235294255057" />
+                  <mssgle:LineSegment
+                    End="55.285714411918,14.3235294255057" />
+                  <mssgle:CubicBezierSegment
+                    Point1="55.285714411918,14.3235294255057"
+                    Point2="59.285714411918,14.3235294255057"
+                    Point3="59.285714411918,18.3235294255057" />
+                  <mssgle:LineSegment
+                    End="59.285714411918,21.1470588510114" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="346.457143437984,259.764705893078">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="92.8571430548113,22.5294117975504"
+              Start="0,0"
+              End="92.8571430548113,15.0294117975504">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.26470589877519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.26470589877519"
+                    Point2="0,11.2647058987752"
+                    Point3="4,11.2647058987752" />
+                  <mssgle:LineSegment
+                    End="88.8571430548113,11.2647058987752" />
+                  <mssgle:CubicBezierSegment
+                    Point1="88.8571430548113,11.2647058987752"
+                    Point2="92.8571430548113,11.2647058987752"
+                    Point3="92.8571430548113,15.2647058987752" />
+                  <mssgle:LineSegment
+                    End="92.8571430548113,15.0294117975504" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5089,61 +5266,39 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Carga Fato001\Comando OLE DB"
-          TopLeft="228.9,208.7" />
+          Size="150.4,41.6"
+          Id="Package\Carga Fato001\Carga Fato 001"
+          TopLeft="234.5,5.49999999999984" />
         <NodeLayout
           Size="216,41.6"
           Id="Package\Carga Fato001\Dimensão de Alteração Lenta"
           TopLeft="201.7,107.1" />
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Carga Fato001\Insert Destination"
-          TopLeft="5.5000000000001,208.7" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato001\Comando OLE DB 1"
-          TopLeft="451.1,208.7" />
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Carga Fato001\Carga Fato 001"
-          TopLeft="234.5,5.49999999999984" />
         <EdgeLayout
-          Id="Package\Carga Fato001.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="361.7,148.7">
+          Id="Package\Carga Fato001.Paths[Saída de Origem OLE DB]"
+          TopLeft="309.7,47.0999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="175,60"
+              EndConnector="0,60"
               Start="0,0"
-              End="175,52.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="171,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="171,20.4878048780488"
-                    Point2="175,20.4878048780488"
-                    Point3="175,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="175,52.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Carga Fato001\Insert Destination"
+          TopLeft="5.5000000000001,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato001.Paths[Nova Saída]"
           TopLeft="257.7,148.7">
@@ -5180,28 +5335,10 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Fato001.Paths[Saída de Origem OLE DB]"
-          TopLeft="309.7,47.0999999999998">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000002"
-              Start="0,0"
-              End="0,52.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Carga Fato001\Comando OLE DB"
+          TopLeft="228.9,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato001.Paths[Saída de Atualizações de Membro Inferido]"
           TopLeft="309.7,148.7">
@@ -5226,9 +5363,57 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato001\Comando OLE DB 1"
+          TopLeft="451.1,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato001.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="361.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175,60"
+              Start="0,0"
+              End="175,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="171,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171,20.4878048780488"
+                    Point2="175,20.4878048780488"
+                    Point3="175,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="175,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato001\Carga Fato 001">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Fato001\Dimensão de Alteração Lenta">
     <Properties>
@@ -5321,78 +5506,48 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato001\Carga Fato 001">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Carga Fato002">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato002\Insert Destination 1"
-          TopLeft="682.5,208.7" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato002\Comando OLE DB 3"
-          TopLeft="1146.5,208.7" />
+          Size="216,41.6"
+          Id="Package\Carga Fato002\Dimensão de Alteração Lenta"
+          TopLeft="891.7,107.1" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Carga Fato002\Carga Fato 002"
-          TopLeft="924.9,5.49999999999984" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato002\Comando OLE DB 2"
-          TopLeft="914.5,208.7" />
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\Carga Fato002\Dimensão de Alteração Lenta"
-          TopLeft="892.1,107.1" />
+          TopLeft="924.5,5.49999999999984" />
         <EdgeLayout
-          Id="Package\Carga Fato002.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="1052.1,148.7">
+          Id="Package\Carga Fato002.Paths[Saída de Origem OLE DB]"
+          TopLeft="999.7,47.0999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="180,60"
+              EndConnector="0,60"
               Start="0,0"
-              End="180,52.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="176,20.4878048780488"
-                    Point2="180,20.4878048780488"
-                    Point3="180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="180,52.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-13.3626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato002\Insert Destination 1"
+          TopLeft="682.1,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato002.Paths[Nova Saída]"
-          TopLeft="948.1,148.7">
+          TopLeft="947.7,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5426,33 +5581,13 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Fato002.Paths[Saída de Origem OLE DB]"
-          TopLeft="1000.1,47.0999999999998">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato002\Comando OLE DB 2"
+          TopLeft="914.1,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato002.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="1000.1,148.7">
+          TopLeft="999.7,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5474,17 +5609,49 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato002\Comando OLE DB 3"
+          TopLeft="1146.1,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato002.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="1051.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180,60"
+              Start="0,0"
+              End="180,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="176,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176,20.4878048780488"
+                    Point2="180,20.4878048780488"
+                    Point3="180,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="180,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.3626953124999,25.4878048780488,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato002\Carga Fato 002">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Fato002\Dimensão de Alteração Lenta">
     <Properties>
@@ -5547,106 +5714,30 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato002\Carga Fato 002">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Carga Fato003">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="216,41.6"
-          Id="Package\Carga Fato003\Dimensão de Alteração Lenta"
-          TopLeft="892.1,107.1" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato003\Comando OLE DB 3"
-          TopLeft="1146.5,208.7" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato003\Comando OLE DB 2"
-          TopLeft="914.5,208.7" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato003\Insert Destination 1"
-          TopLeft="682.5,208.7" />
-        <NodeLayout
           Size="150.4,41.6"
           Id="Package\Carga Fato003\Carga Fato 003"
-          TopLeft="924.9,5.49999999999984" />
-        <EdgeLayout
-          Id="Package\Carga Fato003.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="1052.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="180,60"
-              Start="0,0"
-              End="180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="176,20.4878048780488"
-                    Point2="180,20.4878048780488"
-                    Point3="180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-13.3626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Fato003.Paths[Nova Saída]"
-          TopLeft="948.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-180,60"
-              Start="0,0"
-              End="-180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="-4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-176,20.4878048780488"
-                    Point2="-180,20.4878048780488"
-                    Point3="-180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-114.993359375,25.4878048780488,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="234.5,5.49999999999984" />
+        <NodeLayout
+          Size="216,41.6"
+          Id="Package\Carga Fato003\Dimensão de Alteração Lenta"
+          TopLeft="201.7,107.1" />
         <EdgeLayout
           Id="Package\Carga Fato003.Paths[Saída de Origem OLE DB]"
-          TopLeft="1000.1,47.0999999999998">
+          TopLeft="309.7,47.0999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5663,14 +5754,56 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Carga Fato003\Insert Destination"
+          TopLeft="5.5000000000001,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato003.Paths[Nova Saída]"
+          TopLeft="257.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-171,60"
+              Start="0,0"
+              End="-171,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="-4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-167,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167,20.4878048780488"
+                    Point2="-171,20.4878048780488"
+                    Point3="-171,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-171,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-110.493359375,25.4878048780488,49.98671875,10.3349609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Carga Fato003\Comando OLE DB"
+          TopLeft="228.9,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato003.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="1000.1,148.7">
+          TopLeft="309.7,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5692,59 +5825,49 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato003\Comando OLE DB 1"
+          TopLeft="451.1,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato003.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="361.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175,60"
+              Start="0,0"
+              End="175,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="171,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171,20.4878048780488"
+                    Point2="175,20.4878048780488"
+                    Point3="175,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="175,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato003\Dimensão de Alteração Lenta">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[Fato_003]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[COD_DIA]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Dia&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[COD_FABRICA]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Fabrica&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[CUSTO_FIXO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Custo_Fixo&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 2&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 3&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Fato003\Carga Fato 003">
     <Properties>
@@ -5759,100 +5882,16 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato004\Insert Destination 1"
-          TopLeft="682.5,208.7" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato004\Comando OLE DB 3"
-          TopLeft="1146.5,208.7" />
+          Size="216,41.6"
+          Id="Package\Carga Fato004\Dimensão de Alteração Lenta"
+          TopLeft="201.7,107.1" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Carga Fato004\Carga Fato 004"
-          TopLeft="924.9,5.49999999999984" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato004\Comando OLE DB 2"
-          TopLeft="914.5,208.7" />
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\Carga Fato004\Dimensão de Alteração Lenta"
-          TopLeft="892.1,107.1" />
-        <EdgeLayout
-          Id="Package\Carga Fato004.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="1052.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="180,60"
-              Start="0,0"
-              End="180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="176,20.4878048780488"
-                    Point2="180,20.4878048780488"
-                    Point3="180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-13.3626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Fato004.Paths[Nova Saída]"
-          TopLeft="948.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-180,60"
-              Start="0,0"
-              End="-180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="-4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-176,20.4878048780488"
-                    Point2="-180,20.4878048780488"
-                    Point3="-180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-114.993359375,25.4878048780488,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="234.5,5.49999999999984" />
         <EdgeLayout
           Id="Package\Carga Fato004.Paths[Saída de Origem OLE DB]"
-          TopLeft="1000.1,47.0999999999998">
+          TopLeft="309.7,47.0999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5869,14 +5908,56 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Carga Fato004\Insert Destination"
+          TopLeft="5.5000000000001,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato004.Paths[Nova Saída]"
+          TopLeft="257.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-171,60"
+              Start="0,0"
+              End="-171,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="-4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-167,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167,20.4878048780488"
+                    Point2="-171,20.4878048780488"
+                    Point3="-171,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-171,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-110.493359375,25.4878048780488,49.98671875,10.3349609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Carga Fato004\Comando OLE DB"
+          TopLeft="228.9,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato004.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="1000.1,148.7">
+          TopLeft="309.7,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5898,17 +5979,49 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato004\Comando OLE DB 1"
+          TopLeft="451.1,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato004.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="361.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175,60"
+              Start="0,0"
+              End="175,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="171,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171,20.4878048780488"
+                    Point2="175,20.4878048780488"
+                    Point3="175,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="175,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato004\Carga Fato 004">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Fato004\Dimensão de Alteração Lenta">
     <Properties>
@@ -5952,9 +6065,9 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     &lt;/InputColumnToDBColumn&gt;
   &lt;/InputToColumnsCollection&gt;
   &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 2&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 3&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
   &lt;/GeneratedComponentsIdentificationStrings&gt;
   &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
   &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
@@ -5971,106 +6084,30 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato004\Carga Fato 004">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Carga Fato005">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato005\Comando OLE DB 2"
-          TopLeft="914.5,208.7" />
-        <NodeLayout
           Size="216,41.6"
           Id="Package\Carga Fato005\Dimensão de Alteração Lenta"
-          TopLeft="892.1,107.1" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato005\Insert Destination 1"
-          TopLeft="682.5,208.7" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato005\Comando OLE DB 3"
-          TopLeft="1146.5,208.7" />
+          TopLeft="201.7,107.1" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Carga Fato005\Carga Fato 005"
-          TopLeft="924.9,5.49999999999984" />
-        <EdgeLayout
-          Id="Package\Carga Fato005.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="1052.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="180,60"
-              Start="0,0"
-              End="180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="176,20.4878048780488"
-                    Point2="180,20.4878048780488"
-                    Point3="180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-13.3626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Fato005.Paths[Nova Saída]"
-          TopLeft="948.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-180,60"
-              Start="0,0"
-              End="-180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="-4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-176,20.4878048780488"
-                    Point2="-180,20.4878048780488"
-                    Point3="-180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-114.993359375,25.4878048780488,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="234.5,5.49999999999984" />
         <EdgeLayout
           Id="Package\Carga Fato005.Paths[Saída de Origem OLE DB]"
-          TopLeft="1000.1,47.0999999999998">
+          TopLeft="309.7,47.0999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6087,14 +6124,56 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Carga Fato005\Insert Destination"
+          TopLeft="5.5000000000001,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato005.Paths[Nova Saída]"
+          TopLeft="257.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-171,60"
+              Start="0,0"
+              End="-171,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="-4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-167,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167,20.4878048780488"
+                    Point2="-171,20.4878048780488"
+                    Point3="-171,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-171,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-110.493359375,25.4878048780488,49.98671875,10.3349609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Carga Fato005\Comando OLE DB"
+          TopLeft="228.9,208.7" />
         <EdgeLayout
           Id="Package\Carga Fato005.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="1000.1,148.7">
+          TopLeft="309.7,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6113,6 +6192,46 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato005\Comando OLE DB 1"
+          TopLeft="451.1,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato005.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="361.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175,60"
+              Start="0,0"
+              End="175,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="171,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171,20.4878048780488"
+                    Point2="175,20.4878048780488"
+                    Point3="175,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="175,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6156,9 +6275,9 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     &lt;/InputColumnToDBColumn&gt;
   &lt;/InputToColumnsCollection&gt;
   &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 2&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 3&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
   &lt;/GeneratedComponentsIdentificationStrings&gt;
   &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
   &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
@@ -6180,6 +6299,56 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato003\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[Fato_003]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[COD_DIA]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Dia&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[COD_FABRICA]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Fabrica&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[CUSTO_FIXO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Custo_Fixo&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
