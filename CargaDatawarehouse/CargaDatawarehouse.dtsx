@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-QAN39UG"
   DTS:CreatorName="DESKTOP-QAN39UG\RAFAEL"
-  DTS:DTSID="{4A6F72A4-7F8B-437D-8B6A-4217E78654BF}"
+  DTS:DTSID="{E9901484-22DB-493E-BBAB-260D88AB1B42}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5131.0"
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{E415DAC1-6518-4BD5-84CC-5176C72837A5}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{8C3FFF25-C8F5-4369-9FAA-7ADE4A661496}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{67FD1EF1-6298-4A50-920C-0D720B3CF6AC}"
+      DTS:DTSID="{76FEA8D5-3157-41DB-86C0-4E879CCCCFBA}"
       DTS:ObjectName="Ano_Final">
       <DTS:Property
         DTS:DataType="8"
@@ -28,7 +28,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{55FF0C98-D008-4581-9BC3-920E97E752C2}"
+      DTS:DTSID="{490BB84E-9AB3-4457-9111-5EBFD11C452B}"
       DTS:ObjectName="Ano_Inicial">
       <DTS:Property
         DTS:DataType="8"
@@ -37,7 +37,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{951BA445-ABD1-4C3D-B7AE-92698DD35410}"
+      DTS:DTSID="{A4795020-1BC5-4D53-8B7B-FE40B14C19B9}"
       DTS:ObjectName="Mes_Final">
       <DTS:Property
         DTS:DataType="8"
@@ -46,7 +46,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{5C64FE71-BEB8-4990-B926-36D8FF71AB46}"
+      DTS:DTSID="{CDB44191-FA15-40B7-8246-FD75F66344DD}"
       DTS:ObjectName="Mes_Inicial">
       <DTS:Property
         DTS:DataType="8"
@@ -59,7 +59,8 @@
       DTS:refId="Package\Carga Dimensões"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Carga Dimensões"
-      DTS:DTSID="{23312D58-DED7-4368-953B-CF648E4F0D5D}"
+      DTS:Disabled="True"
+      DTS:DTSID="{AA744A83-DDCB-422D-B9E5-21915ED71B06}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Dimensões"
@@ -92,7 +93,8 @@
       DTS:refId="Package\Carga Fatos"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Carga Fatos"
-      DTS:DTSID="{6EAF1151-5C63-4F0E-BBA3-64980A17536F}"
+      DTS:Disabled="True"
+      DTS:DTSID="{FACD3A7B-EB45-4B84-87C4-80F7216D03F5}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fatos"
@@ -126,7 +128,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{FFD00F41-B8EB-44E3-AED3-3A504BBFAAD2}"
+      DTS:DTSID="{0E373A92-3329-4188-AE91-9C2356B1471C}"
       DTS:From="Package\Carga Dimensões"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"

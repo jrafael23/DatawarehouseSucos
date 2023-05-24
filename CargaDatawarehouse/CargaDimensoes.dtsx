@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDimensoes"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{FB0109F8-D40A-418F-8D16-9AC34D4A4923}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{4E411DFA-5B5F-4167-8C95-370C1115A953}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -180,6 +180,7 @@
       DTS:refId="Package\Criação da dimensão Cliente"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
+      DTS:Disabled="True"
       DTS:DTSID="{4D1661D4-D02B-4E9F-8762-94BB8B893689}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2877,7 +2878,6 @@
       DTS:refId="Package\Criação da Dimensão Fábrica"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:Disabled="True"
       DTS:DTSID="{EF215CAE-ABD4-42E0-B83E-914B880504EF}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"

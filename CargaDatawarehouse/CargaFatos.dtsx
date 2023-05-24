@@ -5,33 +5,33 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-QAN39UG"
   DTS:CreatorName="DESKTOP-QAN39UG\RAFAEL"
-  DTS:DTSID="{86054D28-4B14-4D3D-91F0-12437D2048BB}"
+  DTS:DTSID="{47867B5B-8272-42AE-88AA-851BB06EF153}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5131.0"
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaFatos"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{4472676B-12CA-44D9-9A3A-46BB218DD590}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{B965DB20-F892-41F2-A8C4-F4440F7F9377}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Conexão com DW]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{E5FCC194-F14C-4757-852B-E92E3A149C85}"
+      DTS:DTSID="{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}"
       DTS:ObjectName="Conexão com DW">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-QAN39UG;Initial Catalog=DW_SUCOS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-CargaFatos-{E5FCC194-F14C-4757-852B-E92E3A149C85}DESKTOP-QAN39UG.DW_SUCOS;" />
+          DTS:ConnectionString="Data Source=DESKTOP-QAN39UG;Initial Catalog=DW_SUCOS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-CargaFatos-{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}DESKTOP-QAN39UG.DW_SUCOS;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Conexão com Fontes_DB]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{7C21E0BD-9054-4254-A2DA-2B296B457FF1}"
+      DTS:DTSID="{44BDFE7A-EE78-4CD2-BDE2-52DFA71CD119}"
       DTS:ObjectName="Conexão com Fontes_DB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -45,7 +45,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{680CA7A1-34D9-4202-8B8B-427F5B099819}"
+      DTS:DTSID="{4864E261-3D8C-45C7-A20F-2D181E660CD4}"
       DTS:ObjectName="Ano_Final">
       <DTS:Property
         DTS:DataType="8"
@@ -54,7 +54,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{DA01A22C-6EA1-4CCB-B66B-415AA84C2EDB}"
+      DTS:DTSID="{0BB1D467-F856-4E44-A5EE-982C14368F54}"
       DTS:ObjectName="Ano_Inicial">
       <DTS:Property
         DTS:DataType="8"
@@ -63,7 +63,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{43DF71B3-3DCA-4F07-83B7-98A99D3235C2}"
+      DTS:DTSID="{AB8B61B7-88C5-4C05-A3E7-61EEEA912631}"
       DTS:ObjectName="Mes_Final">
       <DTS:Property
         DTS:DataType="8"
@@ -72,7 +72,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{E37E4374-CA10-41E3-B53C-182AC6DD1A5F}"
+      DTS:DTSID="{DBCA29AD-3B64-4573-ABAA-3D247A78A785}"
       DTS:ObjectName="Mes_Inicial">
       <DTS:Property
         DTS:DataType="8"
@@ -85,7 +85,8 @@
       DTS:refId="Package\Carga Fato001"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:DTSID="{E5EB967C-331B-443B-99E9-BF492588A595}"
+      DTS:Disabled="True"
+      DTS:DTSID="{D79B6512-8B76-4587-A61B-96A140B3B153}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato001"
@@ -1456,7 +1457,8 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato002"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:DTSID="{2737e297-338f-41ba-ae6d-56c46d027ad3}"
+      DTS:Disabled="True"
+      DTS:DTSID="{02D8FFE0-30FA-4865-8260-59E40E969A17}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato002"
@@ -2421,7 +2423,8 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato003"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:DTSID="{7daf55df-0734-46d9-9c14-5e7570cf1ba4}"
+      DTS:Disabled="True"
+      DTS:DTSID="{4C7C2AD0-E9A8-4DE6-936B-935287B6A5F2}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato003"
@@ -3206,7 +3209,8 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato004"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:DTSID="{7fbc0b4f-e5bd-4914-9238-3ef333d55e7a}"
+      DTS:Disabled="True"
+      DTS:DTSID="{ABB0B8C7-87B3-4A12-BDCA-864D1DFC58A8}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato004"
@@ -4171,7 +4175,8 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       DTS:refId="Package\Carga Fato005"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
-      DTS:DTSID="{8ea46c4c-79f3-4fd7-86e9-1dab4628a65b}"
+      DTS:Disabled="True"
+      DTS:DTSID="{975C783E-6F6E-4F37-AADD-21FCFFDBB022}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Carga Fato005"
@@ -5069,12 +5074,12 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
           TopLeft="182.142857530591,134.376470648562" />
         <NodeLayout
           Size="147.2,41.6"
-          Id="Package\Carga Fato005"
-          TopLeft="387.857143682789,258.152941217359" />
-        <NodeLayout
-          Size="147.2,41.6"
           Id="Package\Carga Fato004"
           TopLeft="285.00000060669,193.811764892224" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Carga Fato005"
+          TopLeft="387.857143682789,258.152941217359" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5225,14 +5230,6 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato001\Carga Fato 001">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Carga Fato001\Dimensão de Alteração Lenta">
     <Properties>
       <Property>
@@ -5240,7 +5237,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{E5FCC194-F14C-4757-852B-E92E3A149C85}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[Fato_001]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -5321,6 +5318,14 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato001\Carga Fato 001">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -5486,7 +5491,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{E5FCC194-F14C-4757-852B-E92E3A149C85}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[Fato_002]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -5687,14 +5692,6 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato003\Carga Fato 003">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Carga Fato003\Dimensão de Alteração Lenta">
     <Properties>
       <Property>
@@ -5702,7 +5699,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{E5FCC194-F14C-4757-852B-E92E3A149C85}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[Fato_003]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -5720,6 +5717,230 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Carga Fato 003.Saídas[Saída de Origem OLE DB].Colunas[CUSTO_FIXO]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;Custo_Fixo&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 2&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 3&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato003\Carga Fato 003">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Carga Fato004">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Carga Fato004\Carga Fato 004"
+          TopLeft="924.9,5.49999999999984" />
+        <NodeLayout
+          Size="216,41.6"
+          Id="Package\Carga Fato004\Dimensão de Alteração Lenta"
+          TopLeft="892.1,107.1" />
+        <EdgeLayout
+          Id="Package\Carga Fato004.Paths[Saída de Origem OLE DB]"
+          TopLeft="1000.1,47.0999999999998">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato004\Insert Destination 1"
+          TopLeft="682.5,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato004.Paths[Nova Saída]"
+          TopLeft="948.1,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-180,60"
+              Start="0,0"
+              End="-180,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="-4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-176,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-176,20.4878048780488"
+                    Point2="-180,20.4878048780488"
+                    Point3="-180,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="-180,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-114.993359375,25.4878048780488,49.98671875,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato004\Comando OLE DB 2"
+          TopLeft="914.5,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato004.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="1000.1,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga Fato004\Comando OLE DB 3"
+          TopLeft="1146.5,208.7" />
+        <EdgeLayout
+          Id="Package\Carga Fato004.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="1052.1,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180,60"
+              Start="0,0"
+              End="180,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="176,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176,20.4878048780488"
+                    Point2="180,20.4878048780488"
+                    Point3="180,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="180,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.3626953125,25.4878048780488,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato004\Carga Fato 004">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Fato004\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[Fato_004]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_CLIENTE]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Cliente&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_DIA]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Dia&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_ORGANIZACIONAL]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Organizacional&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_PRODUTO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Produto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[META_FATURAMENTO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Meta_Faturamento&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
@@ -5891,14 +6112,6 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato005\Carga Fato 005">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Carga Fato005\Dimensão de Alteração Lenta">
     <Properties>
       <Property>
@@ -5906,7 +6119,7 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{E5FCC194-F14C-4757-852B-E92E3A149C85}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{BE7348D6-EB2B-4318-BB62-0DE9D0922E40}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[Fato_005]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -5954,219 +6167,11 @@ AND MONTH(DATA_FATO) &lt;= ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Carga Fato004">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Carga Fato004\Carga Fato 004"
-          TopLeft="924.9,5.49999999999984" />
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\Carga Fato004\Dimensão de Alteração Lenta"
-          TopLeft="892.1,107.1" />
-        <EdgeLayout
-          Id="Package\Carga Fato004.Paths[Saída de Origem OLE DB]"
-          TopLeft="1000.1,47.0999999999998">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato004\Insert Destination 1"
-          TopLeft="682.5,208.7" />
-        <EdgeLayout
-          Id="Package\Carga Fato004.Paths[Nova Saída]"
-          TopLeft="948.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-180,60"
-              Start="0,0"
-              End="-180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="-4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-176,20.4878048780488"
-                    Point2="-180,20.4878048780488"
-                    Point3="-180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="-180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-114.993359375,25.4878048780488,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato004\Comando OLE DB 2"
-          TopLeft="914.5,208.7" />
-        <EdgeLayout
-          Id="Package\Carga Fato004.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="1000.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga Fato004\Comando OLE DB 3"
-          TopLeft="1146.5,208.7" />
-        <EdgeLayout
-          Id="Package\Carga Fato004.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="1052.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="180,60"
-              Start="0,0"
-              End="180,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="176,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="176,20.4878048780488"
-                    Point2="180,20.4878048780488"
-                    Point3="180,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="180,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-13.3626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato004\Carga Fato 004">
+    design-time-name="Package\Carga Fato005\Carga Fato 005">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Fato004\Dimensão de Alteração Lenta">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{E5FCC194-F14C-4757-852B-E92E3A149C85}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[Fato_004]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_CLIENTE]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Cliente&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_DIA]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Dia&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_ORGANIZACIONAL]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Organizacional&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[COD_PRODUTO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Produto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Carga Fato 004.Saídas[Saída de Origem OLE DB].Colunas[META_FATURAMENTO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Meta_Faturamento&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 2&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 3&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
